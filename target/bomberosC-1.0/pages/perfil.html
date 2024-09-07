@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/style-perfil.css"> <!-- Asegúrate de que el archivo de estilo esté en su lugar -->
+</head>
+
+<body>
+    <div class="profile-container">
+        <h1>Perfil de Usuario</h1>
+        <div class="profile-info">
+            <h2>Datos Personales</h2>
+            <ul>
+                <li><strong>Nombre:</strong> <!-- Aquí iría el nombre del usuario --> Juan</li>
+                <li><strong>Apellido:</strong> <!-- Aquí iría el apellido del usuario --> Pérez</li>
+                <li><strong>Email:</strong> <!-- Aquí iría el email del usuario --> juan.perez@example.com</li>
+                <li><strong>Teléfono:</strong> <!-- Aquí iría el teléfono del usuario --> +34 600 123 456</li>
+                <li><strong>Contraseña:</strong> <!-- Aquí iría la contraseña del usuario, encriptada si se muestra --> ********</li>
+                <li><strong>Fecha de Nacimiento:</strong> <!-- Aquí iría la fecha de nacimiento del usuario --> 01/01/1980</li>
+                <li><strong>Guardias Realizadas:</strong> <!-- Aquí irían las guardias realizadas --> 15</li>
+            </ul>
+        </div>
+        <div class="profile-actions">
+            <button onclick="editProfile()">Editar Perfil</button>
+            <button onclick="logout()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script>
+        function editProfile() {
+            // Aquí podrías redirigir a una página de edición de perfil
+            window.location.href = 'editar-perfil.html';
+        }
+
+        function logout() {
+            // Aquí podrías cerrar la sesión del usuario
+            window.location.href = 'logout.html';
+        }
+    </script>
+</body>
+
 </html>

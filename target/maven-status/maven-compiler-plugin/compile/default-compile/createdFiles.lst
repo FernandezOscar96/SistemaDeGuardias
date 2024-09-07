@@ -1,5 +1,7 @@
+controller\LoginServlet.class
+controller\GestionUsuariosServlet.class
 dao\UserDAO.class
 conexionDB\conexionDB.class
 dao\UsuarioDAO.class
-controller\LoginServlet.class
 model\Usuarios.class
+controller\GestionPerfilServlet.class
