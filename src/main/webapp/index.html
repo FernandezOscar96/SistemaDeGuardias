@@ -12,22 +12,21 @@
 <body class="login-body">
     <div class="login-container">
         <h2>Iniciar Sesión</h2>
-        <form id="login-form" class="login-form" method="get" action="">
+        <form action="LoginServlet" method="post" id="login-form" class="login-form">
             <div class="form-group">
-                <label class="login-label" for="username">Usuario:</label>
-                <input class="login-input" type="text" id="username" name="username">
+                <label class="login-label" for="email">Usuario:</label>
+                <input class="login-input" type="email" placeholder="Email" id="email" name="email">
                 <div class="error-text"></div>
             </div>
             <div class="form-group">
                 <label class="login-label" for="password">Contraseña:</label>
-                <input class="login-input" type="password" id="password" name="password">
+                <input class="login-input" type="password" placeholder="Contraseña" id="password" name="password">
                 <div class="error-text"></div>
-                <button class="button-login" id="boton-login" type="submit">Iniciar Sesión</button>
+                <input class="button-login" id="boton-login" type="submit" value="Iniciar Sesión">
             </div>
         </form>
         <p id="error-message" class="error-message"></p>
     </div>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,2 +1,5 @@
+dao\UserDAO.class
 conexionDB\conexionDB.class
-model\Bomberos.class
+dao\UsuarioDAO.class
+controller\LoginServlet.class
+model\Usuarios.class

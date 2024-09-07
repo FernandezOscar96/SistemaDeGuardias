@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
         if (usuarioValido) {
             response.sendRedirect("pages/inicio.html");
         } else {
-            response.sendRedirect("../index.html");
+            response.sendRedirect("index.html");
         }
     }
 }

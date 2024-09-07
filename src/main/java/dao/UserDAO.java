@@ -1,10 +1,10 @@
 package dao;
 
+import conexionDB.conexionDB;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import conexionDB.conexionDB;
 
 public class UserDAO {
      public boolean validarUsuario(String email, String contrasena) {
