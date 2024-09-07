@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.login-body {
+  font-family: "Reddit Mono", monospace;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label-login {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-input {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-label{
+  margin-left: 15%;
+}
+
+.login-form .form-group:first-of-type .login-label{
+  margin-left: 22%;
+}
+
+.button-login {
+  width: 70%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 18%;
+  margin-top: 5%;
+  display: block;
+}
+
+.ayuda{
+  margin-left: 35%;
+}
+
+.error-text{
+  margin-top: 3%;
+  margin-left: 21%;
+  color: red;
+}
