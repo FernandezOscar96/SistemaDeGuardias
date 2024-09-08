@@ -1,9 +1,10 @@
-controller\LoginServlet.class
+controller\GestionUsuariosServlet.class
+validate\LoginServlet.class
 dao\UserDAO.class
 conexionDB\conexionDB.class
 dao\UsuarioDAO.class
 controller\RegistroServicioServlet.class
 controller\RegistroUsuarioServlet.class
 model\Usuarios.class
+validate\AdministradorServlet.class
 controller\GestionServiciosServlet.class
-controller\GestionPersonalServlet.class

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function cargarUsuarios() {
-    fetch('/bomberosC/GestionPersonalServlet')
+    fetch('/bomberosC/GestionUsuariosServlet')
             .then(response => response.json())
             .then(usuarios => {
                 const tbody = document.querySelector('#usuariosTable tbody');
@@ -38,7 +38,7 @@ function cargarUsuarios() {
 }
 //modificar y mostrar el modal
 function mostrarModificarModal(id) {
-    fetch(`/bomberosC/GestionPersonalServlet?id=${id}`)
+    fetch(`/bomberosC/GestionUsuariosServlet?id=${id}`)
             .then(response => response.json())
             .then(usuario => {
                 console.log(usuario);
@@ -75,7 +75,7 @@ function guardarModificacion() {
         fechaNacimiento: document.getElementById('fechaNacimiento').value,
         pais: document.getElementById('pais').value
     };
-    fetch('/bomberosC/GestionPersonalServlet', {
+    fetch('/bomberosC/GestionUsuariosServlet', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ function guardarModificacion() {
 //eliminar usuarios
 function eliminarUsuario(id) {
     if (confirm('¿Está seguro que desea eliminar el usuario?')) {
-        fetch(`/bomberosC/GestionPersonalServlet?id=${id}`, {method: 'DELETE'})
+        fetch(`/bomberosC/GestionUsuariosServlet?id=${id}`, {method: 'DELETE'})
                 .then(response => response.json())
                 .then(data => {
                     console.log(data.exito);

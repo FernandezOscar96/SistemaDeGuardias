@@ -100,8 +100,8 @@ function toggleStatus(color) {
     }
 }
 
-function goUsuarios() {
-    window.location.href = "../gestionUsuarios.html";
+function goToUsers() {
+    window.location.href = "../pages/personal/gestionUsuarios.html";
 }
 
 function goToProfile() {

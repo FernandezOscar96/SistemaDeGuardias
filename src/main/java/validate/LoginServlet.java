@@ -1,5 +1,5 @@
 
-package controller;
+package validate;
 
 
 import dao.UserDAO;

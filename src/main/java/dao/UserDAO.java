@@ -11,7 +11,7 @@ public class UserDAO {
         boolean validar = false;
 
         String sql = "SELECT * FROM registro WHERE email = ? AND password = ?";
-
+        
         try {
             //obtenemos la conexion
             Connection conexion = conexionDB.obtenerConexion();
@@ -31,4 +31,8 @@ public class UserDAO {
 
         return validar;
     }
+     
+     public boolean validarPermisos(){
+         return true;
+     }
 }
