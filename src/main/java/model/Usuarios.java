@@ -20,8 +20,8 @@ public class Usuarios {
         return administracion;
     }
 
-    public void setNum_serie(String Num_serie) {
-        this.administracion = Num_serie;
+    public void setNum_serie(String num_serie) {
+        this.administracion = num_serie;
     }
     
     public String getAdministracion() {

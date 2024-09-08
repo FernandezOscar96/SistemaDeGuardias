@@ -8,6 +8,6 @@ package controller;
  *
  * @author oskyf
  */
-public class GestionUsuariosServlet {
+public class GestionServiciosServlet {
     
 }
