@@ -114,7 +114,7 @@ function eliminarUsuario(id) {
     }
 }
 
-function GoToHome(){
+function goToHome(){
     window.location.href = '../inicio.html';
 }
 
