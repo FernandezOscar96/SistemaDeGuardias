@@ -102,6 +102,7 @@ function toggleStatus(color) {
 
 function goToUsuarios() {
     alert("probando");
+    window.location.href = '../pages/gestionUsuarios.html';
 }
 
 function goToProfile() {
