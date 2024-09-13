@@ -7,20 +7,51 @@ body {
 
 .top-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end; /* Alinea los botones a la derecha */
     padding: 10px;
     background-color: #f0f0f0;
     border-bottom: 1px solid #ccc;
+    
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .container {
     margin-top: 20px;
 }
 
+.home-button{
+    background-color: rgba(0, 0, 255, 0.507);
+}
+
+.service-button{
+    background-color: #97701b;
+}
+
+.profile-button {
+    background-color: #007bff;
+}
+
+.logout-button {
+    background-color: #dc3545;
+}
+
 .profile-actions {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+}
+
+.profile-button, .logout-button, .service-button , .home-button{
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
 }
 
 .btn-custom {
@@ -34,7 +65,7 @@ body {
 }
 
 .btn-custom-secondary {
-    background-color: #6c757d;
+    background-color: #859099;
 }
 
 .table th, .table td {

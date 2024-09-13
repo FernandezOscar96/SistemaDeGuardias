@@ -113,20 +113,3 @@ function eliminarUsuario(id) {
                 .catch(error => console.error('Error', error));
     }
 }
-
-function goToHome(){
-    window.location.href = '../inicio.html';
-}
-
-
-function goToProfile() {
-    alert("Navegando al perfil...");
-}
-
-function Services(){
-    alert("servicios...");
-}
-
-function logout() {
-    window.location.href = '../index.html';
-}
