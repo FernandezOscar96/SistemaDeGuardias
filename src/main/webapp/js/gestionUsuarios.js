@@ -19,7 +19,6 @@ function cargarUsuarios() {
                     const fechaFormateada = new Date(usuario.fechaNacimiento).toISOString().split('T')[0];
                     tbody.innerHTML += `
                     <tr>
-                        <td>${usuario.id}</td>
                         <td>${usuario.num_serie}</td>
                         <td>${usuario.nombre}</td>
                         <td>${usuario.apellido}</td>
