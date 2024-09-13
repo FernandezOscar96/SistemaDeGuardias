@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function cargarUsuarios() {
-    fetch('/GestionUsuariosServlet')
+    fetch('/bomberosC/GestionUsuariosServlet')
             .then(response => response.json())
             .then(usuarios => {
                 console.log(usuarios); // Depuración

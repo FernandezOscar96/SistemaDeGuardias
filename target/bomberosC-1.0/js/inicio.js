@@ -101,7 +101,7 @@ function toggleStatus(color) {
 }
 
 function goToUsers() {
-    window.location.href = "../pages/personal/gestionUsuarios.html";
+    window.location.href = "../pages/gestionUsuarios.html";
 }
 
 function goToProfile() {
