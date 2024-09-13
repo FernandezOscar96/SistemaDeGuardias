@@ -22,7 +22,7 @@ public class AdministradorServlet extends HttpServlet {
 
         // Redirigir según la validación
         if (usuarioValido) {
-            response.sendRedirect("pages/personal/gestionUsuarios.html");
+            response.sendRedirect("pages/gestionUsuarios.html");
         } else {
             response.sendRedirect("inicio.html");
         }
