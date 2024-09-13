@@ -8,8 +8,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style-servicio.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="top-bar">
+            <div class="status-section">
+                <p>Estado:</p>
+                <div class="button-container">
+                    <button id="green-button" class="green" onclick="toggleStatus('green')">Verde</button>
+                    <span id="inicio-guardia" class="status-info"></span>
+                </div>
+                <div class="button-container">
+                    <button id="red-button" class="white" onclick="toggleStatus('red')">Rojo</button>
+                    <span id="fin-guardia" class="status-info"></span>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button class="users-button" onclick="goToUsers()">Personal</button>
+                <button class="service-button" onclick="Services()">Servicios</button>
+                <button class="profile-button" onclick="goToProfile()">Ir al Perfil</button>
+                <button class="logout-button" onclick="logout()">Cerrar Sesión</button>
+            </div>
+        </div>
     </body>
 </html>

@@ -105,7 +105,7 @@ function goToUsers() {
 }
 
 function goToProfile() {
-    alert("Navegando al perfil...");
+    window.location.href = 'perfil.html';
 }
 
 function Services(){

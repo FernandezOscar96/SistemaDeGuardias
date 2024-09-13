@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.status-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.status-section p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-button, .logout-button, .service-button , .users-button{
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.users-button{
+    background-color: rgba(0, 0, 255, 0.507);
+}
+
+.service-button{
+    background-color: #97701b;
+}
+
+.profile-button {
+    background-color: #007bff;
+}
+
+.logout-button {
+    background-color: #dc3545;
+}
+
+.status-info {
+    margin-left: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.calendar-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.registro-guardias {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registro-guardias h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.registro-guardias ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.registro-guardias ul li {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .calendar-container {
+        width: 100%;
+    }
+
+    .registro-guardias {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.status-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.status-section p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-button, .logout-button, .service-button , .users-button{
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.users-button{
+    background-color: rgba(0, 0, 255, 0.507);
+}
+
+.service-button{
+    background-color: #97701b;
+}
+
+.profile-button {
+    background-color: #007bff;
+}
+
+.logout-button {
+    background-color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .calendar-container {
+        width: 100%;
+    }
+
+    .registro-guardias {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
