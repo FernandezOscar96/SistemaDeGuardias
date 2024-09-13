@@ -100,7 +100,7 @@ function toggleStatus(color) {
     }
 }
 
-function goToUsuarios() {
+function goToUsers() {
     alert("probando");
     window.location.href = '../pages/gestionUsuarios.html';
 }
