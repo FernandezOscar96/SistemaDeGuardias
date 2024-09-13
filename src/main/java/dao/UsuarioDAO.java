@@ -81,17 +81,17 @@ public class UsuarioDAO {
     }
 
     public boolean modificar(Usuarios usuario) {
-        String query = "UPDATE registro SET nombre = ?, apellido = ?, email = ?, password = ?, fechaNacimiento = ?, pais = ? WHERE id = ?";
+        String query = "UPDATE registro SET num_serie = ?, nombre = ?, apellido = ?, email = ?, password = ?, fechaNacimiento = ?, telefono = ? WHERE id = ?";
         try (Connection conn = conexionDB.obtenerConexion(); PreparedStatement pstmt = conn.prepareStatement(query)) {
 
             pstmt.setString(1, usuario.getNum_serie());
-            pstmt.setString(1, usuario.getNombre());
-            pstmt.setString(2, usuario.getApellido());
-            pstmt.setString(3, usuario.getEmail());
-            pstmt.setString(4, usuario.getPassword());
-            pstmt.setDate(5, usuario.getFechaNacimiento());
-            pstmt.setString(6, usuario.getGuardiasRealizadas());
-            pstmt.setInt(7, usuario.getId());
+            pstmt.setString(2, usuario.getNombre());
+            pstmt.setString(3, usuario.getApellido());
+            pstmt.setString(4, usuario.getEmail());
+            pstmt.setString(5, usuario.getPassword());
+            pstmt.setDate(6,usuario.getFechaNacimiento());
+            pstmt.setString(7, usuario.getGuardiasRealizadas());
+            pstmt.setInt(8, usuario.getId());
 
             int filasAfectadas = pstmt.executeUpdate();
             return filasAfectadas > 0;

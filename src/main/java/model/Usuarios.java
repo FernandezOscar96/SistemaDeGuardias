@@ -3,7 +3,7 @@ package model;
 import java.sql.Date;
 
 public class Usuarios {
-    
+
     private int id;
     private String num_serie;
     private String nombre;
@@ -21,9 +21,9 @@ public class Usuarios {
     }
 
     public void setNum_serie(String num_serie) {
-        this.administracion = num_serie;
+        this.num_serie = num_serie; 
     }
-    
+
     public String getAdministracion() {
         return administracion;
     }
@@ -32,14 +32,14 @@ public class Usuarios {
         this.administracion = administracion;
     }
 
-    public String getTelefono(){
+    public String getTelefono() {
         return telefono;
     }
-    
-    public void setTelefono(String telefono){
+
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    
+
     public int getId() {
         return id;
     }
@@ -95,7 +95,5 @@ public class Usuarios {
     public void setGuardiasRealizadas(String guardiasRealizadas) {
         this.guardiasRealizadas = guardiasRealizadas;
     }
-    
-    
-    
+
 }

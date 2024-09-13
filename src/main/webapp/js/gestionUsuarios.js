@@ -67,14 +67,16 @@ function mostrarModificarModal(id) {
 
 function guardarModificacion() {
     const usuario = {
-        id: document.getElementById('userId').value,
-        nombre: document.getElementById('nombre').value,
-        apellido: document.getElementById('apellido').value,
-        email: document.getElementById('email').value,
-        password: document.getElementById('password').value,
-        fechaNacimiento: document.getElementById('fechaNacimiento').value,
-        pais: document.getElementById('pais').value
-    };
+    id: document.getElementById('userId').value,
+    num_serie: document.getElementById('num_serie').value,
+    nombre: document.getElementById('nombre').value,
+    apellido: document.getElementById('apellido').value,
+    email: document.getElementById('email').value,
+    password: document.getElementById('password').value,
+    fechaNacimiento: document.getElementById('fechaNacimiento').value,
+    telefono: document.getElementById('telefono').value
+};
+
     fetch('/bomberosC/GestionUsuariosServlet', {
         method: 'PUT',
         headers: {
