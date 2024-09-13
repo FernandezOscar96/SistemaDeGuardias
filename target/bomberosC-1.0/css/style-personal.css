@@ -5,24 +5,59 @@ body {
     box-sizing: border-box;
 }
 
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
 .container {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.table {
-    margin-bottom: 0;
+.home-button{
+    background-color: rgba(0, 0, 255, 0.507);
 }
 
-.modal-content {
-    padding: 20px;
+.service-button{
+    background-color: #97701b;
+}
+
+.profile-button {
+    background-color: #007bff;
+}
+
+.logout-button {
+    background-color: #dc3545;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-button, .logout-button, .service-button , .home-button{
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
 }
 
 .btn-custom {
     border-radius: 5px;
-    padding: 10px 20px;
     color: white;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px;
 }
 
 .btn-custom-primary {
@@ -30,40 +65,25 @@ body {
 }
 
 .btn-custom-secondary {
-    background-color: #6c757d;
+    background-color: #859099;
 }
 
-.btn-custom-success {
-    background-color: #28a745;
+.table th, .table td {
+    vertical-align: middle;
 }
 
-.btn-custom-danger {
-    background-color: #dc3545;
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
-.modal-header {
-    border-bottom: 1px solid #dee2e6;
-}
-
-.modal-body {
-    padding: 20px;
-}
-
-.form-label {
-    font-weight: bold;
-}
-
-.form-control {
+.modal-body .form-control {
     margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .modal-dialog {
-        max-width: 100%;
-        margin: 0;
+    .profile-actions {
+        flex-direction: column;
+        align-items: flex-end; /* Alinea los botones a la derecha en pantallas pequeñas */
     }
 }
