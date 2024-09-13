@@ -100,8 +100,8 @@ function toggleStatus(color) {
     }
 }
 
-function goToUsers() {
-    window.location.href = "/bomberosC/pages/gestionUsuarios.html";
+function goToUsuarios() {
+    window.location.href = "/gestionUsuarios.html";
 }
 
 function goToProfile() {
