@@ -90,7 +90,7 @@ public class UsuarioDAO {
             pstmt.setString(4, usuario.getEmail());
             pstmt.setString(5, usuario.getPassword());
             pstmt.setDate(6,usuario.getFechaNacimiento());
-            pstmt.setString(7, usuario.getGuardiasRealizadas());
+            pstmt.setString(7, usuario.getTelefono());
             pstmt.setInt(8, usuario.getId());
 
             int filasAfectadas = pstmt.executeUpdate();
