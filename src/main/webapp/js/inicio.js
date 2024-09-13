@@ -105,10 +105,10 @@ function goToUsers() {
 }
 
 function goToProfile() {
-    window.location.href = 'perfil.html';
+    window.location.href = '/perfil.html';
 }
 
-function Services(){
+function Servicios(){
     window.location.href = '../pages/servicios/gestionServicios.html';
 }
 

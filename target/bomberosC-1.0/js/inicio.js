@@ -101,15 +101,15 @@ function toggleStatus(color) {
 }
 
 function goToUsers() {
-    window.location.href = '../pages/gestionUsuarios.html';
+    window.location.href = '../pages/personal/gestionUsuarios.html';
 }
 
 function goToProfile() {
-    window.location.href = 'perfil.html';
+    window.location.href = '/perfil.html';
 }
 
-function Services(){
-    alert("servicios...");
+function Servicios(){
+    window.location.href = '../pages/servicios/gestionServicios.html';
 }
 
 function logout() {

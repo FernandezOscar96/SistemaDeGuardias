@@ -26,11 +26,6 @@ body {
     margin-bottom: 5px;
 }
 
-.button-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
 
 button {
     padding: 10px 20px;
@@ -39,26 +34,6 @@ button {
     font-size: 14px;
 }
 
-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.green {
-    background-color: green;
-    color: white;
-}
-
-.red {
-    background-color: red;
-    color: white;
-}
-
-.white {
-    background-color: white;
-    color: black;
-    border: 1px solid #ccc;
-}
 
 .profile-actions {
     display: flex;
@@ -86,47 +61,6 @@ button:disabled {
 
 .logout-button {
     background-color: #dc3545;
-}
-
-.status-info {
-    margin-left: 10px;
-    font-size: 14px;
-    color: black;
-}
-
-.calendar-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.registro-guardias {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.registro-guardias h3 {
-    margin: 0 0 10px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.registro-guardias ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.registro-guardias ul li {
-    font-size: 14px;
-    padding: 5px 0;
 }
 
 @media (max-width: 768px) {

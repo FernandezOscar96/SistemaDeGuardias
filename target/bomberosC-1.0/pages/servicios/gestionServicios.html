@@ -8,11 +8,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style-servicio.css">
+        <link rel="stylesheet" href="../../css/style-servicio.css">
     </head>
     <body>
         <div class="top-bar">
             <div class="status-section">
+                <!-- 
+                
                 <p>Estado:</p>
                 <div class="button-container">
                     <button id="green-button" class="green" onclick="toggleStatus('green')">Verde</button>
@@ -22,13 +24,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     <button id="red-button" class="white" onclick="toggleStatus('red')">Rojo</button>
                     <span id="fin-guardia" class="status-info"></span>
                 </div>
+
+                -->
             </div>
             <div class="profile-actions">
-                <button class="users-button" onclick="goToUsers()">Personal</button>
-                <button class="service-button" onclick="Services()">Servicios</button>
+                <button class="users-button" onclick="goToHome()">Inicio</button>
+                <button class="service-button" onclick="goToUsers()">Personal</button>
                 <button class="profile-button" onclick="goToProfile()">Ir al Perfil</button>
                 <button class="logout-button" onclick="logout()">Cerrar Sesión</button>
             </div>
         </div>
+        <script>
+            function goToHome() {
+                console.log("Navegando a Inicio...");
+                window.location.href = '../../pages/inicio.html';
+            }
+
+            function goToProfile() {
+                console.log("Navegando al Perfil...");
+                window.location.href = '../../pages/perfil.html';
+            }
+
+            function goToUsers() {
+                console.log("Navegando a Servicios...");
+                window.location.href = '../../pages/personal/gestionUsuarios.html';
+            }
+
+            function logout() {
+                console.log("Cerrando sesión...");
+                window.location.href = '/bomberosC/index.html';
+            }
+        </script>
     </body>
 </html>
