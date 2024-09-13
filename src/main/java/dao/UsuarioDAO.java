@@ -19,8 +19,8 @@ public class UsuarioDAO {
             pstmt.setString(1, usuario.getNum_serie());
             pstmt.setString(2, usuario.getNombre());
             pstmt.setString(3, usuario.getApellido());
-            pstmt.setString(3, usuario.getTelefono());
-            pstmt.setString(4, usuario.getEmail());
+            pstmt.setString(4, usuario.getTelefono());
+            pstmt.setString(5, usuario.getEmail());
             pstmt.setString(6, usuario.getPassword());
             pstmt.setDate(7, usuario.getFechaNacimiento());
             pstmt.setString(8, usuario.getGuardiasRealizadas());
@@ -41,7 +41,7 @@ public class UsuarioDAO {
         usuario.setNombre(rs.getString("nombre"));
         usuario.setApellido(rs.getString("apellido"));
         usuario.setEmail(rs.getString("email"));
-        usuario.setPassword(rs.getString("telefono"));
+        usuario.setTelefono(rs.getString("telefono"));
         usuario.setFechaNacimiento(rs.getDate("fechaNacimiento"));
         usuario.setGuardiasRealizadas(rs.getString("guardiasRealizadas"));
         return usuario;
@@ -81,7 +81,7 @@ public class UsuarioDAO {
     }
 
     public boolean modificar(Usuarios usuario) {
-        String query = "UPDATE registroUsuarios SET nombre = ?, apellido = ?, email = ?, password = ?, fechaNacimiento = ?, pais = ? WHERE id = ?";
+        String query = "UPDATE registro SET nombre = ?, apellido = ?, email = ?, password = ?, fechaNacimiento = ?, pais = ? WHERE id = ?";
         try (Connection conn = conexionDB.obtenerConexion(); PreparedStatement pstmt = conn.prepareStatement(query)) {
 
             pstmt.setString(1, usuario.getNum_serie());
@@ -102,7 +102,7 @@ public class UsuarioDAO {
     }
 
     public boolean eliminar(int id) {
-        String query = "DELETE FROM registroUsuarios WHERE id = ?";
+        String query = "DELETE FROM registro WHERE id = ?";
         try (Connection conn = conexionDB.obtenerConexion(); PreparedStatement pstmt = conn.prepareStatement(query)) {
 
             pstmt.setInt(1, id);

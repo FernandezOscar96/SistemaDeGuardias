@@ -9,9 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function cargarUsuarios() {
-    fetch('/bomberosC/GestionUsuariosServlet')
+    fetch('/GestionUsuariosServlet')
             .then(response => response.json())
             .then(usuarios => {
+                console.log(usuarios); // Depuración
                 const tbody = document.querySelector('#usuariosTable tbody');
                 tbody.innerHTML = '';
                 usuarios.forEach(usuario => {
@@ -30,10 +31,9 @@ function cargarUsuarios() {
                             <button class="btn btn-primary btn-sm" onclick="mostrarModificarModal(${usuario.id})">Modificar</button>
                             <button class="btn btn-danger btn-sm" onclick="eliminarUsuario(${usuario.id})">Eliminar</button>
                         </td>
-                    </tr>
-                `;
+                    </tr>`;
                 });
-            })
+            })            
             .catch(error => console.error('Error', error));
 }
 //modificar y mostrar el modal

@@ -17,7 +17,7 @@ public class Usuarios {
 
     // Getters y setters
     public String getNum_serie() {
-        return administracion;
+        return num_serie;
     }
 
     public void setNum_serie(String num_serie) {

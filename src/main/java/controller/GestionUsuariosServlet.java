@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/GestionPersonalServlet")
+@WebServlet("/GestionUsuariosServlet")
 public class GestionUsuariosServlet extends HttpServlet {
 
     private UsuarioDAO usuarioDAO;
