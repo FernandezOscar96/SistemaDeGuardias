@@ -108,7 +108,7 @@ function goToProfile() {
     window.location.href = '/perfil.html';
 }
 
-function Servicios(){
+function goToServices(){
     window.location.href = '../pages/servicios/gestionServicios.html';
 }
 
