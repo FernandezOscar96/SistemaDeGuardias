@@ -99,19 +99,3 @@ function toggleStatus(color) {
         }
     }
 }
-
-function goToUsers() {
-    window.location.href = '../pages/personal/gestionUsuarios.html';
-}
-
-function goToProfile() {
-    window.location.href = '/perfil.html';
-}
-
-function goToServices(){
-    window.location.href = '../pages/servicios/gestionServicios.html';
-}
-
-function logout() {
-    window.location.href = '../index.html';
-}
