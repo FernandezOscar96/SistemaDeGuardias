@@ -24,7 +24,7 @@
         <div class="profile-actions">
             <button class="users-button" onclick="goToUsers()">Personal</button>
             <button class="service-button" onclick="goToServices()">Servicios</button>
-            <button class="profile-button" onclick="perfile()">Ir al Perfil</button>
+            <button class="profile-button" onclick="goToPerfile()">Ir al Perfil</button>
             <button class="logout-button" onclick="logout()">Cerrar Sesión</button>
         </div>
     </div>
@@ -37,24 +37,7 @@
         <h3>Registro de Guardias</h3>
         <ul id="lista-registro"></ul>
     </div>
-    <script>
-        function goToUsers() {
-    window.location.href = '../pages/personal/gestionUsuarios.html';
-}
-
-function perfile() {
-    window.location.href = 'perfil.html';
-}
-
-function goToServices(){
-    window.location.href = '../pages/servicios/gestionServicios.html';
-}
-
-function logout() {
-    window.location.href = '../index.html';
-}
-
-    </script>
+    <script src="../js/ext.js"></script>
     <script src="../js/inicio.js"></script>
 </body>
 </html>

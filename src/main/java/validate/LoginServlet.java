@@ -22,10 +22,12 @@ public class LoginServlet extends HttpServlet {
 
         // Instanciar el DAO para validar las credenciales
         UserDAO userDao = new UserDAO();
+        userDao.actualizarSesion(email, true); // Establecer 'sesion' en 1
         boolean usuarioValido = userDao.validarUsuario(email, password);
 
         // Redirigir según la validación
         if (usuarioValido) {
+            request.getSession().setAttribute("userEmail", email);
             response.sendRedirect("pages/inicio.html");
         } else {
             response.sendRedirect("index.html");

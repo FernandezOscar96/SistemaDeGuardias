@@ -9,7 +9,6 @@ import java.sql.SQLException;
 public class UserDAO {
      public boolean validarUsuario(String email, String contrasena) {
         boolean validar = false;
-
         String sql = "SELECT * FROM registro WHERE email = ? AND password = ?";
         
         try {
@@ -35,4 +34,24 @@ public class UserDAO {
      public boolean validarPermisos(){
          return true;
      }
+
+    public void actualizarSesion(String email, boolean b) {
+
+        System.out.println(email);
+        System.out.println(b);
+         String sql = "UPDATE registro SET sesion = ? WHERE email = ?";
+
+         try {
+             //obtenemos la conexion
+             Connection conexion = conexionDB.obtenerConexion();
+             //preparar la consulta
+             PreparedStatement consulta = conexion.prepareStatement(sql);
+             //argumentos
+             consulta.setInt(1, b ? 1 : 0); // Establece 1 si estado es true, 0 si es false
+             consulta.setString(2, email);
+             consulta.executeUpdate();
+         } catch (SQLException e){
+             e.printStackTrace(); // Manejo de errores
+         }
+    }
 }
